@@ -1,27 +1,15 @@
 #include <stdio.h>
 
-static int abs(int n) {
-    return n < 0 ? -1 * n : n;
-}
-
-
-static int mx_strcmp(const char *s1, const char *s2) {
-    int max = 0;
-    for (int i = 0; s1[i] != '\0' && s2[i] != '\0'; i++) {
-        if (abs(s1[i] - s2[i]) > abs(max)) max = s1[i] - s2[i];
-    }
-    return max;
-}
-
+int mx_strcmp(const char *s1, const char *s2);
 int mx_bubble_sort(char **arr, int size) {
     int count = 0;
     char *a;
-    for (int i = 0; i < size; i++) {
-        for (int j = 0; j < size; j++) {
-            if ( mx_strcmp(arr[i], arr[j]) > 0) {
-                a = arr[i];
-                arr[i] = arr[j];
-                arr[j] = a;
+    for (int i = 0; i < size - 1; i++) {
+        for (int j = 0; j < size - i - 1; j++) {
+            if ( mx_strcmp(arr[j], arr[j+1]) > 0) {
+                a = arr[j];
+                arr[j] = arr[j +1];
+                arr[j +1] = a;
                 count++;
             }
         }

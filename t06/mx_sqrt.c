@@ -8,7 +8,8 @@ int mx_sqrt(int x) {
     return 0;
 }
 
+/*
 int main() {
     printf("%d", mx_sqrt(144));
 }
-
+*/

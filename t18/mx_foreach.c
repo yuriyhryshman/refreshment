@@ -1,12 +1,16 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 #include <unistd.h>
 
-static void mx_printchar(char c) {
-    char s[2];
-    s[0] = c;
-    s[1] = '\0';
-    write(1, s, 1);
+/*
+void mx_printchar(char c) {
+    write(1, &c, 1);
+    // char s[2];
+    // s[0] = c;
+    // s[1] = '\0';
+    // write(1, s, 1);
 }
-
 
 void mx_printint(int n) {
     if (n >= -2147483647 || n <= 2147483647) {
@@ -34,9 +38,20 @@ void mx_printint(int n) {
         }
     }
 }
+*/
+
+void mx_foreach(int *arr, int size, void (*f)(int)) {
+    for (int i = 0; i < size; i++) {
+        f(arr[i]);
+    }
+}
 
 /*
-int main () {
-    mx_printint(2147483647);
+int main() {
+    int *xyi = malloc(sizeof(int));
+    for (int i = 0; i < 5; ++i) {
+        xyi[i] = i + 1;
+    }
+    mx_foreach(xyi, 5, mx_printint);
 }
 */
