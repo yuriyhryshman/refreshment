@@ -8,3 +8,12 @@ int mx_strlen(const char *s) {
     return i;
 }
 
+/*
+int main() {
+    int a = 0;
+    a = mx_strlen("Follow the rabbit");
+    printf("%d", a);
+}
+*/
+
+
