@@ -11,7 +11,7 @@ int mx_strlen(const char *s) {
 /*
 int main() {
     int a = 0;
-    a = mx_strlen("Follow the rabbit");
+    a = mx_strlen("Save the white rabbit");
     printf("%d", a);
 }
 */
