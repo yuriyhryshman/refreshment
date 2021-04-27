@@ -12,7 +12,7 @@ double mx_pow(double n, unsigned int pow) {
 
 /*
 int main() {
-    printf("%f", mx_pow(5, 3));
+    printf("%f", mx_pow(0, 0));
 }
 */
 

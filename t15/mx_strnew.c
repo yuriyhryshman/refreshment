@@ -13,7 +13,7 @@ char *mx_strnew(const int size) {
 
 /*
 int main() {
-    int size = 0;
+    int size = 10;
     char *str = mx_strnew(size);
     printf("%s\n", str);
 }

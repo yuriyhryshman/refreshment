@@ -37,7 +37,7 @@ unsigned long mx_hex_to_nbr(const char *hex) {
 
 /*
 int main() {
-    printf("%lu", mx_hex_to_nbr("ffffffffffff"));
+    printf("%lu", mx_hex_to_nbr("C4"));
 }
 */
 

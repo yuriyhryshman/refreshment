@@ -15,7 +15,7 @@ int mx_factorial_iter(int n) {
 
 /*
 int main() {
-    printf("%d", mx_factorial_iter(5));
+    printf("%d", mx_factorial_iter(0));
 }
 */
 

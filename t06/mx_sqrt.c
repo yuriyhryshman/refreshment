@@ -11,7 +11,7 @@ int mx_sqrt(int x) {
 
 /*
 int main() {
-    printf("%d", mx_sqrt(1));
+    printf("%d", mx_sqrt(-4));
 }
 */
 

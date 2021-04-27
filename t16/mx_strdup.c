@@ -15,7 +15,9 @@ char *mx_strdup(const char *str) {
 
 /*
 int main() {
-    char *str = mx_strdup("Follow the rabbit");
+    char *str = mx_strdup("Save Ralph the rabbit!");
     printf("%s", str);
 }
 */
+
+
